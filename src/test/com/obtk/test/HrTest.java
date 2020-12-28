@@ -21,7 +21,7 @@ public class HrTest {
 
     @Test
     public void testEmp(){
-0        SqlSession sqlSession= SqlSessionUtil.getSqlSession();
+        SqlSession sqlSession= SqlSessionUtil.getSqlSession();
         EmpMapper empMapper=sqlSession.getMapper(EmpMapper.class);
         empMapper.findCount();
         SqlSessionUtil.close(sqlSession);
@@ -46,5 +46,9 @@ public class HrTest {
     @Test
     public void test2(){
         System.out.println("cx - - - - - 测试是否成功");
+    }
+
+    public void test3(){
+        System.out.println("又一次测试");
     }
 }
